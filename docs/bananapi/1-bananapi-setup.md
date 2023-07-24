@@ -1,4 +1,4 @@
-# 24-07-2023 - Bananapi setup
+# 1 - Bananapi setup
 
 ## Introduction
 
