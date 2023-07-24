@@ -93,4 +93,4 @@ And work on BPI without cable and additional screens (who needs display when you
 
 Here I just described my first steps with BananaPI. Any feedback/comment is mostly appreciated.
 
-[Back to Home](README.md)
+[Back to Home](../../README.md)
