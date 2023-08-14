@@ -1,5 +1,9 @@
-# 2 - Basic GPIO
-
+---
+layout: post
+title:  "BananaPI GPIO"
+date:   2023-07-27 18:00:00 +0200
+categories: bananapi update
+---
 ## Introduction
 
 So when the board is up and running and greets with such beautiful screen:
@@ -43,5 +47,3 @@ There are plenty of ways to control the gpio:
 Used the library on my own you can see the code [here](https://github.com/WernherVonData/bananapi-things/tree/main/led-by-gpio) - turns on/off the pin `PB3` five times and then it's going off.
 
 For direct use of gpiod I recommend the [wiki](https://linux-sunxi.org/GPIO#Accessing_the_GPIO_pins_through_character_device_with_mainline_kernel) - do not see a reason to repeat the same stuff here.
-
-[Back to Home](../../README.md)
