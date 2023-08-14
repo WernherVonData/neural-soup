@@ -1,5 +1,9 @@
-# 1 - Bananapi setup
-
+---
+layout: post
+title:  "BananaPI Setup"
+date:   2023-07-24 18:00:00 +0200
+categories: bananapi update
+---
 ## Introduction
 
 On my last birthday, some Simple and Uneducated QA gave me
@@ -92,5 +96,3 @@ And work on BPI without cable and additional screens (who needs display when you
 ## Conclusion
 
 Here I just described my first steps with BananaPI. Any feedback/comment is mostly appreciated.
-
-[Back to Home](../../README.md)
