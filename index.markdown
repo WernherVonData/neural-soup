@@ -12,3 +12,6 @@ Hello and welcome on the Neural Soup site. Here you can find some of my scribble
 ## BananaPI
 1. [24-07-2023 - BananaPI Setup](./bananapi/_posts/2023-07-24-bananapi-setup.markdown)
 2. [27-07-2023 - Basic gpio](./bananapi/_posts/2023-07-27-basic-gpio.markdown)
+
+## C++
+1. [16-08-2023 - Protobuf in C++](./cpp/_posts/2023-08-16-protobuf-cpp.markdown)
