@@ -1,0 +1,94 @@
+---
+layout: post
+title:  "GRPC in C++"
+date:   xxxx-xx-xx 00:00:00 +0200
+categories: cpp update
+---
+
+## Introduction
+
+GRPC is a framework for communication between services. It allows for a client to call a method directly on the server like it was a local method. It is based on Protocol Buffers.
+
+## How it looks in Proto
+
+Just like creation of messages in Proto to create object for serialization and deserialization we can 
+define our grpc service in proto files.
+
+For example:
+
+```Proto
+// greeter.proto
+service Greeter {
+    rpc SayHello (HelloRequest) returns (HelloReply) {}
+}
+
+message HelloRequest {
+    string name = 1;
+}
+
+message HelloReply {
+    string message = 1;
+}
+```
+
+This way we define a service called Greeter with one method SayHello. The method takes HelloRequest object and returns HelloReply object. `SayHello` method is called `rpc` in GRPC terminology and will be called just like a normal method in the client application. GRPC also allows for streaming of data. It means that the method can return a stream of data or take a stream of data as an argument by adding a keyword `stream` before the type of the argument or return value.
+
+To generate message classes just type:
+```bash
+protoc --cpp_out=proto greeter.proto
+```
+
+And to generate a client and service definitions:
+```bash
+protoc --grpc_out=proto --plugin=protoc-gen-grpc=`which grpc_cpp_plugin` greeter.proto
+```
+
+To see what is required just follow the [setup](https://grpc.io/docs/languages/cpp/quickstart/#setup)
+
+## GRPC Server
+
+When having compiled everything we can start writing the server.
+
+First you need to create a grpc server implementation:
+```cpp
+// Our generated protos
+#include "../proto/greeter.grpc.pb.h"
+#include "../proto/greeter.pb.h"
+
+class GreeterServerImpl final : public grpc_test::Greeter::Service
+{
+public:
+  //Implementation of what will happen when client will call the SayHello on its side
+  grpc::Status SayHello(grpc::ServerContext* /*context*/, const grpc_test::HelloRequest* request, grpc_test::HelloReply* response) override
+  {
+    response->set_message("Hello " + request->name());
+    return grpc::Status::OK;
+  }
+};
+```
+
+Then you need to create a server and register the service:
+```cpp
+void RunServer(const std::string& port)
+{
+  GreeterServerImpl service;
+  // From <grpcpp/server_builder.h>
+  // Starting building the synchronous server
+  grpc::ServerBuilder builder;
+  // From <grpcpp/security/server_credentials.h>
+  builder.AddListeningPort(port, grpc::InsecureServerCredentials());
+  builder.RegisterService(&service);
+
+  // From <grpcpp/server.h>
+  std::unique_ptr<grpc::Server> server(builder.BuildAndStart());
+  std::cout << "Server up and running, listens on port " << port << std::endl;
+  server->Wait();
+}
+```
+
+# GRPC Client
+
+## References
+
+[GRPC documentation](https://grpc.io/docs/languages/cpp/quickstart/)
+[GRPC concepts](https://grpc.io/docs/what-is-grpc/core-concepts)
