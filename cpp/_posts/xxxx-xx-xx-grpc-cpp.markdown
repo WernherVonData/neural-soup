@@ -9,6 +9,10 @@ categories: cpp update
 
 GRPC is a framework for communication between services. It allows for a client to call a method directly on the server like it was a local method. It is based on Protocol Buffers.
 
+Since the default serialization and deserialization base on the Protocol Buffers, then the GRPC is pretty platform and language agnostic - we can have a C++ server and a Python/Ruby client. The only thing that is required is to have the proto files describing the messages and the service.
+
+So you don't need to know how to bind one language into another for example to gain a performance boost (but of course you should know about it, since you may not always want to use GRPC or simply the use-case might require to not use such communication).
+
 ## How it looks in Proto
 
 Just like creation of messages in Proto to create object for serialization and deserialization we can 
@@ -86,7 +90,59 @@ void RunServer(const std::string& port)
 }
 ```
 
-# GRPC Client
+## GRPC Client
+
+The client for this server will be quite simple:
+```cpp
+class GreeterClient
+{
+public:
+  GreeterClient(std::shared_ptr<grpc::Channel> channel) : stub_(grpc_test::Greeter::NewStub(channel)) {}
+
+  void Greet(const std::string& name)
+  {
+    // Context for the client. It could be used to convey extra
+    // information to the server and/or tweak certain RPC behaviors.
+    grpc::ClientContext context;
+    // Request that we are sending
+    grpc_test::HelloRequest request;
+    request.set_name(name);
+
+    grpc_test::HelloReply reply;
+    // Call on the server
+    grpc::Status status = stub_->SayHello(&context, request, &reply);
+    if (status.ok()) {
+      std::cout << "Greeter received: " << reply.message() << std::endl;
+    } else {
+      std::cout << "Greeter failed with status: " << status.error_code() << " (" << status.error_message() << ")"
+                << std::endl;
+    }
+  }
+
+private:
+  // The stub is the object used to communicate with the server.
+  std::unique_ptr<grpc_test::Greeter::Stub> stub_;
+};
+```
+
+And then main:
+```cpp
+  // Create a channel to the server, port must be the same as already defined in the server
+  GreeterClient client(grpc::CreateChannel("0.0.0.0:50051", grpc::InsecureChannelCredentials()));
+
+  client.Greet("Hello");
+  std::this_thread::sleep_for(std::chrono::seconds(1));
+  client.Greet("To");
+  std::this_thread::sleep_for(std::chrono::seconds(1));
+  client.Greet("GRPC");
+  return 0;
+```
+
+This is it. The client will call the server and the server will respond.
+
+## Summary
+
+This post is just high-level information about GRPC. If you want to learn more, just head up to the grpc [documentation](https://grpc.io/docs/languages/cpp/quickstart/). You can find there more information about the proto language itself and examples of use in different languages.
 
 ## References
 
