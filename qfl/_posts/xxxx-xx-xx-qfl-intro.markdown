@@ -1,0 +1,24 @@
+---
+layout: post
+title:  "Quest for Legends - first post"
+date:   xxxx-xx-xx 00:00:00 +0200
+categories: qfl update
+---
+
+## Introduction
+
+This is it - finally I made myself to start working on my own strange game.
+It all started when I started playing strange games like [Caves of Qud](https://www.cavesofqud.com/), [Project Zomboid](https://projectzomboid.com/blog/), [Rimworld](https://rimworldgame.com/) etc.
+
+Was always thinking about how cool it would be start writing own hardcore mechanics, but I saw I was procrastinating on the learning. One day when I just pulled myself together and build [Allegro5](https://liballeg.org/) - I said "no more excuses" and started working on the game.
+
+## The game concept
+
+The game will have a very limited graphic (I'm not really skilled with making things to good look, so I will focus on the mechanics). The game will be turn-based roguelite where the main character has to find with his/her Uncover ability the particular person and kill it - why? Who knows. The game will be set in a world where magic and technology live altogether and they are excluding each other. Took my inspiration from the [Arcanum: Of Steamworks and Magick Obscura](https://en.wikipedia.org/wiki/Arcanum:_Of_Steamworks_and_Magick_Obscura).
+
+## My goals
+
+I'm just going to write it, extend and polish it. I'm more interested in learning what new stuff I can learn from such challange. When the time will come I'll make the repository public and publish it on some itch.io or something like that.
+
+Not going to charge anything for - if you will have an idea I'll setup some donations.
+However keep in mind that I'll be biased because you send me some donations and do not expect anything more than "thank you".
