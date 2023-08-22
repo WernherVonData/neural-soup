@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Poco Events"
-date:   xxxx-xx-xx 00:00:00 +0200
+date:   2023-08-22 09:30:00 +0200
 categories: cpp update
 ---
 
