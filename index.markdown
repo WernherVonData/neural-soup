@@ -12,6 +12,7 @@ Hello and welcome on the Neural Soup site. Here you can find some of my scribble
 ## C++
 1. [16-08-2023 - Protobuf in C++](./cpp/_posts/2023-08-16-protobuf-cpp.markdown)
 2. [22-08-2023 - Poco Events](./cpp/_posts/2023-08-22-poco-events.markdown)
+3. [26-08-2023 - GRPC in C++](./cpp/_posts/2023-08-26-grpc-cpp.markdown)
 
 ## BananaPI
 1. [24-07-2023 - BananaPI Setup](./bananapi/_posts/2023-07-24-bananapi-setup.markdown)
