@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "GRPC in C++"
-date:   xxxx-xx-xx 00:00:00 +0200
+date:   2023-08-26 00:00:00 +0200
 categories: cpp update
 ---
 
