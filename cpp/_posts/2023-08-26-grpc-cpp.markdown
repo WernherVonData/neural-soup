@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "GRPC in C++"
-date:   2023-08-26 00:00:00 +0200
+date:   2023-08-26 08:00:00 +0200
 categories: cpp update
 ---
 
@@ -146,5 +146,5 @@ This post is just high-level information about GRPC. If you want to learn more, 
 
 ## References
 
-[GRPC documentation](https://grpc.io/docs/languages/cpp/quickstart/)
-[GRPC concepts](https://grpc.io/docs/what-is-grpc/core-concepts)
+* [GRPC documentation](https://grpc.io/docs/languages/cpp/quickstart/)
+* [GRPC concepts](https://grpc.io/docs/what-is-grpc/core-concepts)
