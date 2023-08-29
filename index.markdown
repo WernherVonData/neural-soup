@@ -22,16 +22,9 @@ Hello and welcome on the Neural Soup site. Here you can find some of my scribble
 1. [24-07-2023 - BananaPI Setup](./bananapi/_posts/2023-07-24-bananapi-setup.markdown)
 2. [27-07-2023 - Basic gpio](./bananapi/_posts/2023-07-27-basic-gpio.markdown)
 
-
-
-
-
-
-
-
-
-
-
-
-
+  
+  
+  
+  
+  
 I'm doing it all for fun, but if you want thank me here is the [link](https://www.paypal.com/donate/?hosted_button_id=BUPKP6UBT9JRE).
