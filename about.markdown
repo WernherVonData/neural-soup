@@ -12,3 +12,5 @@ This blog is a place where I'm going to share various thougts and maybe share so
 
 Apart from STEM fields I like painting miniatures, playing different kind of games and reading books (mostly science-fiction/fantasy, but I'm not picky - book must be good in a first place).
 
+
+I'm doing it all for fun, but if you want thank me here is the [link](https://www.paypal.com/donate/?hosted_button_id=BUPKP6UBT9JRE).
