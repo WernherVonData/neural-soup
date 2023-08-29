@@ -8,7 +8,7 @@ categories: bananapi update
 
 So when the board is up and running and greets with such beautiful screen:
 
-![armbian welcome](./img/armbian_welcome.png)
+![armbian welcome]({{site.url}}/{{site.baseurl}}/bananapi/img/armbian_welcome.png)
 
 Then there is a urge to do something. What it can be? GPIO - let's check if it's working. Had to figure it out since the physical pins have different numbers when they are mapped in the system.
 

@@ -1,0 +1,33 @@
+---
+layout: post
+title:  "Quest for Legends - first post"
+date:   2023-08-29 08:00:00 +0200
+categories: qfl update
+---
+
+## Introduction
+
+This is it - finally I made myself to start working on my own strange game.
+It all started when I started playing strange games like [Caves of Qud](https://www.cavesofqud.com/), [Project Zomboid](https://projectzomboid.com/blog/), [Rimworld](https://rimworldgame.com/) etc.
+
+Was always thinking about how cool it would be start writing own hardcore mechanics, but I saw I was procrastinating on the learning. One day when I just pulled myself together and build [Allegro5](https://liballeg.org/) - I said "no more excuses" and started working on the game.
+
+## The game concept
+
+The game will have a very limited graphic (I'm not really skilled with making things to good look, so I will focus on the mechanics). The game will be turn-based roguelite where the main character has to find with his/her Uncover ability the particular person and kill it - why? Who knows. The game will be set in a world where magic and technology live altogether and they are excluding each other. Took my inspiration from the [Arcanum: Of Steamworks and Magick Obscura](https://en.wikipedia.org/wiki/Arcanum:_Of_Steamworks_and_Magick_Obscura).
+
+## My goals
+
+- I'm interested in learning new stuff - so sometimes it will go really experimental.
+- Do not expect any fast gains here - progressing slowly due to my work and family.
+- When the time will come I'll make the repository public and publish it on some itch.io or something like that.
+- Not going to charge anything for it - maybe set some donations.
+- By donations do not expect anything particular in return expect "thank you".
+- Do not expect any fancy graphics - I'm not skilled in that area.
+
+
+## Current state
+
+Game currently looks this way ![here should be an image]({{site.url}}/{{site.baseurl}}/qfl/img/2023-08-29-qfl-basic.gif).
+
+Our white character is moving around the world of grass and water terrain (internally each time when the character steps on water it becomes 'wet' and stepping grass turn it back to 'normal'). The target NPC is currently implemented to mimic exactly the movement of the player. Game is turned based, the player can move freely in eight directions.

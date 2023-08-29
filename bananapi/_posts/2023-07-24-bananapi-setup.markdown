@@ -64,10 +64,10 @@ For WSL1 I had to configure minicom since the default setup was not working. To 
 sudo minicom -s
 ```
 
-![setup-menu](./img/minicom-setup.png)
+![setup-menu]({{site.url}}/{{site.baseurl}}/bananapi/img/minicom-setup.png)
 
 Opened serial port setup:
-![serial-setup-menu](./img/minicom-serial-setup.png)
+![serial-setup-menu]({{site.url}}/{{site.baseurl}}/bananapi/img/minicom-serial-setup.png)
 
 And set:
 * Serial device from `/dev/modem` to `/dev/ttyS5` - my UART/USB was connected to the COM5 port for Windows. For WSL1 COM ports from Windows are mapped for matching `dev/ttySN` port.
