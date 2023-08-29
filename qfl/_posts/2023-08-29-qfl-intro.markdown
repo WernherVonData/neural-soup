@@ -29,3 +29,5 @@ The game will have a very limited graphic (I'm not really skilled with making th
 ## Current state
 
 Game currently looks this way ![here should be an image]({{site.url}}/{{site.baseurl}}/qfl/img/2023-08-29-qfl-basic.gif).
+
+Our white character is moving around the world of grass and water terrain (internally each time when the character steps on water it becomes 'wet' and stepping grass turn it back to 'normal'). The target NPC is currently implemented to mimic exactly the movement of the player. Game is turned based, the player can move freely in eight directions.
