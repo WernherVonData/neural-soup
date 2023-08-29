@@ -9,6 +9,10 @@ permalink:
 
 Hello and welcome on the Neural Soup site. Here you can find some of my scribbles:
 
+## Quest for Legends (QFL)
+
+1. [29-08-2023 - QFL Introduction](./qfl/_posts/2023-08-29-qfl-intro.markdown)
+
 ## C++
 1. [16-08-2023 - Protobuf in C++](./cpp/_posts/2023-08-16-protobuf-cpp.markdown)
 2. [22-08-2023 - Poco Events](./cpp/_posts/2023-08-22-poco-events.markdown)

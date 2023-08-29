@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Quest for Legends - first post"
-date:   xxxx-xx-xx 00:00:00 +0200
+date:   2023-08-29 08:00:00 +0200
 categories: qfl update
 ---
 
@@ -18,7 +18,14 @@ The game will have a very limited graphic (I'm not really skilled with making th
 
 ## My goals
 
-I'm just going to write it, extend and polish it. I'm more interested in learning what new stuff I can learn from such challange. When the time will come I'll make the repository public and publish it on some itch.io or something like that.
+- I'm interested in learning new stuff - so sometimes it will go really experimental.
+- Do not expect any fast gains here - progressing slowly due to my work and family.
+- When the time will come I'll make the repository public and publish it on some itch.io or something like that.
+- Not going to charge anything for it - maybe set some donations.
+- By donations do not expect anything particular in return expect "thank you".
+- Do not expect any fancy graphics - I'm not skilled in that area.
 
-Not going to charge anything for - if you will have an idea I'll setup some donations.
-However keep in mind that I'll be biased because you send me some donations and do not expect anything more than "thank you".
+
+## Current state
+
+Game currently looks this way ![here should be an image]({{site.url}}/{{site.baseurl}}/qfl/img/2023-08-29-qfl-basic.gif).
