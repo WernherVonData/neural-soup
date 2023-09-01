@@ -12,7 +12,7 @@ Hello and welcome on the Neural Soup site. Here you can find some of my scribble
 ## Quest for Legends (QFL)
 
 1. [29-08-2023 - QFL Introduction](./qfl/_posts/2023-08-29-qfl-intro.markdown)
-[Menu bar](./qfl/_posts/2000-01-01-menu-bar-height.markdown)
+2. [01-09-2023 - Menu Bar problem](./qfl/_posts/2023-09-01-menu-bar-height.markdown)
 
 ## C++
 1. [16-08-2023 - Protobuf in C++](./cpp/_posts/2023-08-16-protobuf-cpp.markdown)
