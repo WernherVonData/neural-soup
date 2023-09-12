@@ -9,6 +9,7 @@ permalink:
 
 Hello and welcome on the Neural Soup site. The posts are written in chronological order from the newest to the oldest. Each post got a tag that is used to group the posts internally.
 
+* [12-09-2023 - [Misc] Exercising your body](./misc/_posts/2023-09-12-exercises-for-devs.markdown)
 * [05-09-2023 - [Misc] MessagePack Vulnerability in public API](./misc/_posts/2023-09-05-msg-pack-vulnerability.markdown)
 * [01-09-2023 - [QFL] Menu Bar problem](./qfl/_posts/2023-09-01-menu-bar-height.markdown)
 * [29-08-2023 - [QFL] QFL Introduction](./qfl/_posts/2023-08-29-qfl-intro.markdown)
