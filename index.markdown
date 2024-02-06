@@ -18,6 +18,4 @@ Hello and welcome on the Neural Soup site. The posts are written in chronologica
 * [16-08-2023 - [C++] Protobuf in C++](./cpp/_posts/2023-08-16-protobuf-cpp.markdown)
 * [27-07-2023 - [BananaPI] Basic gpio](./bananapi/_posts/2023-07-27-basic-gpio.markdown)
 * [24-07-2023 - [BananaPI] BananaPI Setup](./bananapi/_posts/2023-07-24-bananapi-setup.markdown)  
-  
-  
-I'm doing it all for fun, but if you want thank me here is the [link](https://www.paypal.com/donate/?hosted_button_id=BUPKP6UBT9JRE).
+
